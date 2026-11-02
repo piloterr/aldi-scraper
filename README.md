@@ -71,7 +71,7 @@ response = requests.get(
     params={
         "query": "fiches-produits/filets-danchois-marines-6806.html",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -198,7 +198,7 @@ response = requests.get(
     params={
         "query": "produits/viande-poisson/poisson-crustace.html",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
